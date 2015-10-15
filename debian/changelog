@@ -1,5 +1,7 @@
-arduino (2:1.6.5) experimental; urgency=low
+arduino-udooneo (2:1.6.5-r3ubuntu2) trusty; urgency=medium
 
-  * updated to Arduino 1.6.5
+  * updated to Arduino 1.6.5-r3
+  * added UDOO Neo specific stuff
+  * removed AVR boards
 
- -- ShorTie <idiot@dot.com>  Tue, 16 May 2015 04:20:00 -0500
+ -- UDOO Team <social@udoo.org>  Sun, 11 Oct 2015 00:47:21 +0000

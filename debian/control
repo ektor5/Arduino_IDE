@@ -1,4 +1,4 @@
-Source: arduino
+Source: arduino-udooneo
 Section: electronics
 Priority: extra
 Maintainer: UDOO Team <social@udoo.org>
@@ -7,7 +7,7 @@ Build-Depends: debhelper, javahelper, default-jdk, default-jre, libastylej-jni,
  libjssc-java, libjna-java, libjsch-java, libjmdns-java,
  libcommons-logging-java, libcommons-httpclient-java, libcommons-exec-java, ant,
  astyle, extra-xdg-menus, policykit-1, default-jre, libastylej-jni,
- avr-libc, avrdude, gcc, gcc-avr, bossa-cli, gcc-arm-none-eabi
+ gcc, gcc-arm-none-eabi
 Standards-Version: 3.9.5
 Homepage: http://www.arduino.cc
 Vcs-Git: git://anonscm.debian.org/collab-maint/arduino.git
@@ -30,10 +30,10 @@ Description: AVR development board IDE and built-in libraries
  to the Arduino development board. Libraries and example code will also
  be installed.
 
-Package: arduino-core
+Package: arduino-core-udooneo
 Architecture: all
-Depends: ${misc:Depends}, gcc-avr (>= 4.7.0), avrdude, gcc, avr-libc (>= 1.8.0)
-Recommends: bossa-cli
+Depends: ${misc:Depends}, gcc, libstdc++-arm-none-eabi-newlib, gcc-arm-none-eabi,
+ udooneo-m4uploader
 Suggests: arduino-mk
 Description: Code, examples, and libraries for the Arduino platform
  Arduino is an open hardware microcontroller platform.  This package contains

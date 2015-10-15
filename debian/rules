@@ -41,17 +41,15 @@ override_dh_installchangelogs:
 override_dh_compress:
 	dh_compress -X.ino
 
+override_dh_strip:
+	dh_strip -X.a
+
 override_dh_install:
 	find build/linux/work -type d -empty -delete
-	dh_install -Xlicense -XLICENSE -XLicense -XMangler/make.sh -X.elf -X.a -X.lib -X.min.js
+	dh_install -Xlicense -XLICENSE -XLicense -XMangler/make.sh -X.elf -X.lib -X.min.js
 	mkdir -p debian/arduino-core/usr/share/arduino/lib
 	mv debian/arduino/usr/share/arduino/lib/*.txt debian/arduino-core/usr/share/arduino/lib
-	cp hardware/arduino/sam/variants/arduino_due_x/libsam_sam3x8e_gcc_rel.* debian/arduino-core/usr/share/arduino/hardware/arduino/sam/variants/arduino_due_x
 	chmod +x \
-    debian/arduino-core/usr/share/arduino/hardware/arduino/avr/bootloaders/optiboot/makeall \
-    debian/arduino-core/usr/share/arduino/hardware/arduino/avr/firmwares/wifishield/scripts/ArduinoWifiShield_upgrade.sh \
-    debian/arduino-core/usr/share/arduino/hardware/arduino/avr/firmwares/wifishield/scripts/ArduinoWifiShield_upgrade_mac.sh \
-    debian/arduino-core/usr/share/arduino/hardware/arduino/sam/system/CMSIS/CMSIS/Documentation/DSP_Lib/html/installdox \
     debian/arduino-core/usr/share/arduino/libraries/WiFi/extras/scripts/ArduinoWifiShield_upgrade.sh
 
 override_dh_installdocs:
