@@ -47,10 +47,6 @@ override_dh_strip:
 override_dh_install:
 	find build/linux/work -type d -empty -delete
 	dh_install -Xlicense -XLICENSE -XLicense -XMangler/make.sh -X.elf -X.lib -X.min.js
-	mkdir -p debian/arduino-core/usr/share/arduino/lib
-	mv debian/arduino/usr/share/arduino/lib/*.txt debian/arduino-core/usr/share/arduino/lib
-	chmod +x \
-    debian/arduino-core/usr/share/arduino/libraries/WiFi/extras/scripts/ArduinoWifiShield_upgrade.sh
 
 override_dh_installdocs:
 	dh_installdocs

@@ -1,4 +1,4 @@
-arduino-udooneo (2:1.6.5-r3ubuntu2) trusty; urgency=medium
+arduino-udoo (1.6.5-r3ubuntu1) trusty; urgency=medium
 
   * updated to Arduino 1.6.5-r3
   * added UDOO Neo specific stuff

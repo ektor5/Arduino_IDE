@@ -1,4 +1,3 @@
-/usr/share/java/jna.jar /usr/share/arduino/lib/jna.jar
-/usr/share/java/jssc.jar /usr/share/arduino/lib/jssc.jar
-/usr/lib/jni/libastylej.so /usr/share/arduino/lib/libastylej.so
-
+/usr/share/doc/arduino-core-udooneo/examples /usr/share/arduino/examples
+/usr/share/doc/arduino-core-udooneo/reference /usr/share/arduino/reference
+/usr/share/doc /usr/share/arduino/hardware/tools/avr/share/doc

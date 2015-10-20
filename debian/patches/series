@@ -1,5 +1,4 @@
 arm_fix.patch
-sam_fix.patch
 permission_fix.patch
 wrapper_for_deb.patch
 install_jar_links.patch
