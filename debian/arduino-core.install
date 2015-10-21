@@ -1,0 +1,6 @@
+build/linux/work/hardware/ usr/share/arduino
+build/linux/work/libraries/ usr/share/arduino
+build/linux/work/tools/ usr/share/arduino
+build/linux/work/dist/ usr/share/arduino
+format.every.sketch.sh usr/share/arduino
+hardware/arduino/sam/ usr/share/arduino/hardware/arduino/
