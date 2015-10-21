@@ -30,10 +30,21 @@ Description: AVR development board IDE and built-in libraries
  to the Arduino development board. Libraries and example code will also
  be installed.
 
+Package: arduino-core
+Architecture: all
+Depends: ${misc:Depends}, gcc, libstdc++-arm-none-eabi-newlib, gcc-arm-none-eabi
+Suggests: arduino-mk
+Description: Code, examples, and libraries for the Arduino platform
+ Arduino is an open hardware microcontroller platform.  This package contains
+ the minimal set of tools to allow one to program an Arduino.  It also contains
+ examples and libraries. For a CLI, see the 'arduino-mk' package.
+ .
+ This package does not include the Java based Integrated Development
+ Environment, which can be found in the 'arduino' package.
+
 Package: arduino-core-udooqdl
 Architecture: all
-Depends: ${misc:Depends}, gcc, libstdc++-arm-none-eabi-newlib, gcc-arm-none-eabi,
- udooqdl-bossac
+Depends: udooqdl-bossac
 Suggests: arduino-mk
 Provides: arduino-core
 Conflicts: arduino-core-udooneo
@@ -47,8 +58,7 @@ Description: Code, examples, and libraries for the Arduino platform
 
 Package: arduino-core-udooneo
 Architecture: all
-Depends: ${misc:Depends}, gcc, libstdc++-arm-none-eabi-newlib, gcc-arm-none-eabi,
- udooneo-m4uploader
+Depends: udooneo-m4uploader
 Suggests: arduino-mk
 Provides: arduino-core
 Conflicts: arduino-core-udooqdl
