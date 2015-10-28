@@ -1,3 +1,22 @@
+arduino-udoo (1.6.5-r3ubuntu3) trusty; urgency=medium
+
+  * Added UDOO Boards serial ports
+
+ -- UDOO Team <social@udoo.org>  Wed, 28 Oct 2015 12:00:35 +0000
+
+arduino-udoo (1.6.5-r3ubuntu2) trusty; urgency=medium
+  
+   * renamed serial classes
+   * changed millis return type
+   * fixed String class allocation problem
+   * improved MCC internal serial debug
+   * minor UART improvement
+   * added pulseIn() function
+   * better delayMicroseconds() and micros()
+   * added gpio interrupt support
+
+ -- UDOO Team <social@udoo.org>  Tue, 27 Oct 2015 16:07:33 +0000 
+
 arduino-udoo (1.6.5-r3ubuntu1) trusty; urgency=medium
 
   * updated to Arduino 1.6.5-r3
